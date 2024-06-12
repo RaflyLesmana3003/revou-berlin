@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revou berlin</title>
+    <meta name="description" content="ini halaman latihan belajar html">
+    <meta name="keywords" content="revou, html">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="revou berlin">
+
+
+        <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="halo ini revou berlin" />
+    <meta property="og:description" content="halo ini revou berlin loh mantap kan 🔥" />
+    <meta property="og:image" content="https://revou-berlin.vercel.app/assets/image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="halo ini revou berlin" />
+    <meta property="twitter:description" content="halo ini revou berlin loh mantap kan 🔥" />
+    <meta property="twitter:image" content="https://revou-berlin.vercel.app/assets/image.png" />
+</head>
+<body>
+    <header>
+        <h1>ini halaman kebun binatang 🐲</h1>
+        <p>This is an app about the most beautiful creature in the world!</p>
+
+        <nav>
+            <a href="/home" target="_blank">home</a>
+            <a href="/list">list animal</a>
+            <a href="/input">tambah animal</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form action="" method="get">
+
+            <label for="nama_animal">Nama Hewan</label><br>
+            <input type="text" name="input_nama_animal" id="nama_animal" placeholder="tambahkan nama hewan" required autofocus> <br>
+
+            <label for="email_pic">Email pic</label><br>
+            <input type="email" name="email_pic" id="email_pic" placeholder="tambahkan pic untuk hewan ini"> <br>
+
+            <label for="description">description</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+
+            <label for="jenis">jenis hewan</label>
+            <select name="jenis" id="jenis">
+                <option selected value="mamalia"> hewan mamalia </option>
+                <option value="karnivora"> hewan karnivora </option>
+
+                <optgroup label="hewan yang rada geli">
+                    <option value="ambifi"> hewan ambifi </option>
+                    <option value="Invertebrate"> hewan Invertebrate </option>
+                </optgroup>
+            </select> <br>
+
+            <p>input gender</p>
+            <input type="radio" name="gender" id="laki" value="laki"><label for="laki">laki - laki</label> <br>
+            <input type="radio" name="gender" id="perempuan" value="perempuan"><label for="perempuan">perempuan</label> <br>
+            <input type="radio" name="gender" id="batman" value="batman"><label for="batman">batman</label> <br>
+
+            <p>kelengkapan</p>
+            <input type="checkbox" name="kelengkapan" id="data1" value="data1"><label for="data1"><img src="https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg" alt="jared kucing" width="200px"></label> <br>
+            <input type="checkbox" name="kelengkapan" id="data2" value="data2"><label for="data2"><img src="https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg" alt="jared kucing" width="200px"></label> <br>
+            <input checked type="checkbox" name="kelengkapan" id="data3" value="data3"><label for="data3"><img src="https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg" alt="jared kucing" width="200px"></label> <br>
+
+            <br>
+            <br>
+            <button type="submit">Submit data</button>
+            <button type="reset">Reset form</button>
+        </form>
+    </main>
+</body>
+</html>

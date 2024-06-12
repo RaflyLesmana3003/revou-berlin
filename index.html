@@ -25,7 +25,50 @@
     <meta property="twitter:image" content="https://revou-berlin.vercel.app/assets/image.png" />
 </head>
 <body>
-    <span>halaman index</span>
-    <a href="/product">ini link</a>
+<script>
+    // Function to save data to local storage
+    function saveData() {
+        // Get the input values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var description = document.getElementById('description').value;
+
+        // Save the data to local storage
+        sessionStorage.setItem('name', name);
+        sessionStorage.setItem('email', email);
+        sessionStorage.setItem('description', description);
+
+        // Alert the user that the data has been saved
+        alert('Data saved successfully!');
+    }
+
+    // Function to load data from local storage
+    function loadData() {
+        // Retrieve the data from local storage
+        var name = sessionStorage.getItem('name');
+        var email = sessionStorage.getItem('email');
+        var description = sessionStorage.getItem('description');
+
+        // Display the data in the form fields
+        document.getElementById('name').value = name;
+        document.getElementById('email').value = email;
+        document.getElementById('description').value = description;
+    }
+
+    // Call the loadData function when the page loads
+    window.onload = loadData;
+</script>
+
+<!-- HTML form to input and display data -->
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+    <button type="button" onclick="saveData()">Save Data</button>
+</form>
+
 </body>
 </html>

@@ -3,72 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>revou berlin</title>
-    <meta name="description" content="ini halaman latihan belajar html">
-    <meta name="keywords" content="revou, html">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="author" content="revou berlin">
-
-
-        <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="halo ini revou berlin" />
-    <meta property="og:description" content="halo ini revou berlin loh mantap kan 🔥" />
-    <meta property="og:image" content="https://revou-berlin.vercel.app/assets/image.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="halo ini revou berlin" />
-    <meta property="twitter:description" content="halo ini revou berlin loh mantap kan 🔥" />
-    <meta property="twitter:image" content="https://revou-berlin.vercel.app/assets/image.png" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/index.css">
 </head>
 <body>
-<script>
-    // Function to save data to local storage
-    function saveData() {
-        // Get the input values
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var description = document.getElementById('description').value;
-
-        // Save the data to local storage
-        sessionStorage.setItem('name', name);
-        sessionStorage.setItem('email', email);
-        sessionStorage.setItem('description', description);
-
-        // Alert the user that the data has been saved
-        alert('Data saved successfully!');
-    }
-
-    // Function to load data from local storage
-    function loadData() {
-        // Retrieve the data from local storage
-        var name = sessionStorage.getItem('name');
-        var email = sessionStorage.getItem('email');
-        var description = sessionStorage.getItem('description');
-
-        // Display the data in the form fields
-        document.getElementById('name').value = name;
-        document.getElementById('email').value = email;
-        document.getElementById('description').value = description;
-    }
-
-    // Call the loadData function when the page loads
-    window.onload = loadData;
-</script>
-
-<!-- HTML form to input and display data -->
-<form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="description">Description:</label><br>
-    <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
-    <button type="button" onclick="saveData()">Save Data</button>
-</form>
-
 </body>
 </html>

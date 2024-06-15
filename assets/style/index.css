@@ -1,0 +1,22 @@
+.contoh {
+    color: blue;
+}
+
+.paragraf{
+    color: #1c9c13;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #1c9c13;
+}
+
+.container {
+    width: 100px;
+    height: 500px;
+    background-color: red;
+    float: right;
+}
+
+.container:hover {
+    width: 200px;
+}

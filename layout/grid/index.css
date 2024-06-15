@@ -1,0 +1,32 @@
+body{
+    padding: 100px;
+}
+
+.container{
+    display: grid; /* Specifies the element as a grid container */
+    grid-template-rows: repeat(5, 1fr); /* Specifies the number and size of the rows in a grid */
+    grid-template-columns: repeat(4, 1fr); /* Specifies the number and size of the columns in a grid */
+    gap: 10px; /* Specifies the gap between the grid items */
+    padding: 10px; /* Specifies the padding of the grid container */
+    height: 400px; /* Specifies the height of the grid container */
+    border: 1px dashed black; /* Specifies the border of the grid container */
+}
+
+.box{
+    border: 10px solid palevioletred;
+    background-color: lightpink;
+}
+.box-1{
+    /* grid-row-start: 3; /* Specifies the starting row of the element */
+    /* grid-row-end: 6; /* Specifies the ending row of the element */
+    /* grid-column-start: 2; /* Specifies the starting column of the element */
+    /* grid-column-end: 4; /* Specifies the ending column of the element */
+    /* background-color: lime; /* Sets the background color of the element */
+    /* z-index: 1; /* Sets the z-index of the element */
+}
+
+.box-2{
+    /* grid-column: 3 / 6; /* Specifies the starting and ending column of the element */
+    /* grid-row: 1 / 5; /* Specifies the starting and ending row of the element */
+    /* grid-area: 1 / 4 / 4 / 6; /* Specifies the grid area of the element */
+} 

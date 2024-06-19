@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+section {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(4, 150px);
+  grid-gap: 1em;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.item-1 {
+  background-color: var(--primary);
+}
+
+.item-2 {
+  background-color: var(--primary);
+}
+
+.item-3 {
+  background-color: var(--primary);
+}
+
+.item-4 {
+  background-color: var(--primary);
+}
+
+.item-5 {
+  background-color: var(--primary);
+}
+
+.item-6 {
+  background-color: var(--primary);
+}
+
+.item-7 {
+  background-color: var(--primary);
+}
+
+.item-8 {
+  background-color: var(--primary);
+}
+
+.item-9 {
+  background-color: var(--primary);
+}
+
+.item-10 {
+  background-color: var(--primary);
+}
+
+.item-11 {
+  background-color: var(--primary);
+}
+
+.item-12 {
+  background-color: var(--primary);
+}
+
+.button {
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--warna-secondary);
+  color: white;
+  padding: 10px;
+}
+
+.button-2 {
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--warna-primary);
+  color: white;
+  padding: 10px;
+}

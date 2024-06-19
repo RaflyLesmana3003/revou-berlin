@@ -3,22 +3,16 @@ body{
 }
 
 .container{
-    /* Specifies the element as a grid container */
     display: grid;
-    /* Specifies the number and size of the columns in a grid */
     grid-template-columns: repeat(3, 1fr);
-    /* Specifies the number and size of the rows in a grid */
-    grid-template-rows: repeat(3, 1fr);
-    /* Defines the grid areas for the grid items */
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-     'header header header'
-     'aside main main'
-     'footer footer footer';
-    /* Specifies the padding of the grid container */
+    "header header sidebar"
+    "main main sidebar"
+    "footer footer sidebar"
+    "test test test";
     padding: 10px;
-    /* Specifies the height of the grid container */
     height: 400px;
-    /* Specifies the border of the grid container */
     border: 1px dashed black;
 }
 
@@ -27,22 +21,22 @@ body{
     background-color: lightpink;
 }
 
-/* Assigns the grid area for the header section */
 .box-1{
     grid-area: header;
 }
 
-/* Assigns the grid area for the aside section */
 .box-2{
-    grid-area: aside;
+    grid-area: footer;
 }
 
-/* Assigns the grid area for the main section */
 .box-3{
     grid-area: main;
 }
 
-/* Assigns the grid area for the footer section */
 .box-4{
-    grid-area: footer;
+    grid-area: sidebar;
+}
+
+.box-5{
+    grid-area: test;
 }

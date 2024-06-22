@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+ul {
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.unit-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-item {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Absolute units */
+.absolute-px {
+    width: 150px; 
+    height: 50px; 
+    background-color: #3498db; 
+}
+
+/* Relative units */
+.relative-em {
+    width: 10em;  
+    height: 5em; 
+    background-color: #e74c3c; 
+}
+
+.relative-rem {
+    font-size: 1rem;
+    width: 10rem; 
+    height: 5rem; 
+    background-color: #f39c12; 
+}
+
+
+.relative-percent {
+    width: 50%; 50% of the parent element
+    background-color: #2ecc71;
+}
+
+.relative-vw {
+    width: 20vw; 
+    height: 100vw;
+    background-color: #9b59b6;
+}
+
+.relative-vh {
+    width: 20vh;
+    height: 10vh;
+    background-color: #e67e22;
+}
